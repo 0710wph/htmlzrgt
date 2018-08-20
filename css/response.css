@@ -1,0 +1,69 @@
+/* 超小设备（手机，小于 768px） */
+/* Bootstrap 中默认情况下没有媒体查询 */
+@media (max-width: 767px) {
+    .navbar-default .navbar-toggle{
+        background-color: #fff;
+    }
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form{
+        background-color: #fe596a;
+        z-index: 999;
+    }
+    .nav>li{
+        border-bottom: 1px #eee solid;
+        z-index: 999;
+    }
+    .navbar-default .navbar-nav>li>a{
+        color: #fff;
+    }
+    .fudai_show_tit{
+        font-size: 30px;
+    }
+    .open-fd a{
+        font-size: 20px;
+        width:100px;
+        height: 40px;
+        line-height: 40px;
+    }
+    .recommend_ul li{
+        width:100%;
+    }
+}
+/* 小型设备（平板电脑，768px 起） */
+@media (min-width: 768px) {
+    .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+        background-color: #fff;
+        color: #333;
+    }
+    .navbar-default .navbar-nav>li>a{
+        color: #fff;
+        font-size: 16px;
+    }
+
+}
+
+/* 中型设备（台式电脑，992px 起） */
+@media (max-width: 1199px) {
+    .fd-spe-pc{
+        display: none;
+    }
+    .fd-spe-m{
+        display: block;
+    }
+    /*.recommend_ul li{*/
+        /*width:50%;*/
+    /*}*/
+}
+
+/* 大型设备（大台式电脑，1200px 起） */
+@media (min-width: 1200px) {
+
+    .navbar-default .navbar-nav>li>a{
+        color: #fff;
+        font-size: 16px;
+    }
+    .fd-spe-m{
+        display: none;
+    }
+
+
+}
