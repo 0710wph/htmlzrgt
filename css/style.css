@@ -11,6 +11,9 @@ h5{font-size:16px}
 .mb-15{
     margin-bottom: 15px;
 }
+.mb-20{
+	margin-bottom: 20px;
+}
 .font-normal{
 	font-weight:normal;
 }
@@ -372,7 +375,8 @@ input[type=text]:focus,input[type=email]:focus,input[type=password]:focus,input[
     transition:all .5s ease;
 }
 .luyan:hover img{
-    -webkit-transform:scale(1.1);transform:scale(1.1)
+    -webkit-transform:scale(1.1);
+	transform:scale(1.1)
 }
 
 .luyan:hover .ly-text{
@@ -390,4 +394,30 @@ input[type=text]:focus,input[type=email]:focus,input[type=password]:focus,input[
     0% {opacity: 0.2;}
     40% {opacity: 0.5;}
     100% {opacity: 1;}
+}
+.news-a{
+	background: #fff;
+	padding-bottom: 15px;
+}
+.news-a-tit{
+	color:#000;
+	text-align: center;
+	font-size: 14px;
+	margin-top:15px;
+	padding:0px 10px;
+	line-height: 18px;
+}
+.news-a-img{
+	width: 100%;
+	overflow: hidden;
+}
+.news-a-img img{
+	transition:all .5s ease;
+}
+.news-a a:hover img{
+	-webkit-transform:scale(1.1);
+	transform:scale(1.1)
+}
+.news-a a:hover .news-a-tit{
+	color:#e51c23;
 }
