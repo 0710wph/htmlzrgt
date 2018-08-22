@@ -29,7 +29,13 @@ ul,ol{margin:0;padding:0;list-style:none}
 .sm-padding{padding-top:20px;padding-bottom:20px}
 .bg-grey{background-color:#f6f6f6;}
 .bg-dark{background-color:#1c1d21}
-.bg-img{position:absolute;left:0;top:0;right:0;bottom:0;z-index:-1;background-position:center;background-size:cover;background-attachment:fixed}
+.bg-img{
+	position:absolute;left:0;top:0;right:0;bottom:0;
+	z-index:1;
+	background-position:center;
+	background-size:cover;
+	background-attachment:fixed;
+}
 .bg-img .overlay{position:absolute;left:0;top:0;right:0;bottom:0;opacity:.6;background:#000}
 .section-header{position:relative;margin-bottom:0px}
 .section-header .title{text-transform:capitalize}
@@ -133,7 +139,8 @@ input[type=text]:focus,input[type=email]:focus,input[type=password]:focus,input[
 		-webkit-transform:translateY(-50%);
 		-ms-transform:translateY(-50%);
 		transform:translateY(-50%);
-		text-align:center
+		text-align:center;
+		z-index: 9;
 	}
 	.home-content h1{text-transform:uppercase}
 .home-content h2{font-size:22px;color:#eee;font-weight: normal;line-height: 30px;}
