@@ -12,9 +12,9 @@
     <link type="text/css" rel="stylesheet" href="css/owl.theme.default.css" />
     <link type="text/css" rel="stylesheet" href="css/magnific-popup.css" />
     <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
     <link type="text/css" rel="stylesheet" href="css/style.css" />
     <script src="js/count.js"></script>
-    <link rel="stylesheet" href="../../rgdf/themes/default/mobile/css/m.css">
     <!--[if lt IE 9]>
     <script src="js/html5shiv.min.js"></script>
     <script src="js/respond.min.js"></script>
@@ -388,7 +388,7 @@
     </div>
 </header>
 <!--关于我们-->
-<div id="about" class="section md-padding">
+<div id="about" class="section md-padding bg-white">
     <div class="container">
         <div class="section-header text-center">
             <h2 class="title">关于我们</h2>
@@ -396,10 +396,8 @@
         <div class="row mt-30">
             <div class="col-md-6">
                 <div id="about-slider" class="owl-carousel owl-theme">
-                    <a href="#"><img class="img-responsive" src="images/a1.jpg" alt=""></a>
+                    <a href="#"><img class="img-responsive" src="images/a11.jpg" alt=""></a>
                     <a href="#"><img class="img-responsive" src="images/a2.jpg" alt=""></a>
-                    <a href="#"><img class="img-responsive" src="images/a1.jpg" alt=""></a>
-                    <a href="#"><img class="img-responsive" src="images/a1.jpg" alt=""></a>
                 </div>
             </div>
             <div class="col-md-6">
@@ -452,7 +450,7 @@
 </div>
 <!--业务范围 END-->
 <!--产品展示-->
-<div id="pro" class="section md-padding">
+<div id="pro" class="section md-padding bg-white">
     <div class="container">
         <div class="row">
             <div class="section-header text-center">
@@ -548,8 +546,8 @@
             <div class="col-xs-12 col-sm-4 col-md-4 mb-20">
                 <div class="news-a">
                     <a href="#">
-                        <div class="news-a-img"><img src="images/news.jpg" class="img-responsive"></div>
-                        <div class="news-a-tit">大健康项目专题研讨会圆满成功</div>
+                        <div class="news-a-img"><img src="images/news4.jpg" class="img-responsive"></div>
+                        <div class="news-a-tit">三聚环保MCT超级悬浮床技术引领中国炼化产业升级</div>
                     </a>
                     <div class="news-time">2018.08.21</div>
                 </div>
@@ -679,7 +677,7 @@
 </div>
 <!--路演展示 END-->
 <!--联系我们-->
-<div id="contact" class="section md-padding">
+<div id="contact" class="section md-padding bg-white">
     <div class="container">
         <div class="row">
             <div class="section-header text-center">
@@ -744,6 +742,7 @@
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/owl.carousel.min.js"></script>
 <script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
+<script type="text/javascript" src="js/animatext.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 <script src="js/count.js"></script>
 <script src="js/divhover.js"></script>
@@ -751,6 +750,15 @@
     $(".num5").num({Type:'num5'});
     $(".num4").num({Type:'num4'});
     $(".num6").num({Type:'num6'});
+    $(".demo1").animatext({speed: 150,
+        mode: "words",
+        effect: 'swing',
+        infinite: true
+    });
+    $(".demo2").animatext({speed: 150,
+        effect: 'flipInX',
+        infinite: true
+    });
 </script>
 </body>
 </html>
