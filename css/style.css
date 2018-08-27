@@ -285,6 +285,11 @@ input[type=text]:focus,input[type=email]:focus,input[type=password]:focus,input[
 	transform:scale(1.1)
 }
 
+/*.luyan img.img-thumbnail {*/
+	/*background-color: #ccc;*/
+	/*border: 1px solid #fff;*/
+/*}*/
+
 .luyan:hover .ly-text{
     animation: text-fade-in;/*动画名称*/
     animation-duration: 1.5s;/*动画持续时间*/
@@ -381,13 +386,13 @@ input[type=text]:focus,input[type=email]:focus,input[type=password]:focus,input[
 	box-shadow: 0 0 10px #e51c23;
 }
 .three-blocks h4{
-	font-size: 18px;
+	font-size: 16px;
 	text-align: center;
 	margin:10px 0;
 }
 .five-des{
-	font-size: 14px;
-	line-height: 28px;
+	font-size: 12px;
+	line-height: 24px;
 }
 /*media*/
 @media (min-width: 1024px) and (max-width: 1199px) {
@@ -457,7 +462,12 @@ input[type=text]:focus,input[type=email]:focus,input[type=password]:focus,input[
 @media only screen and (max-width:767px){
 	.navbar-brand{height: 40px; max-height: 40px;}
 	.navbar-brand .logo{max-height:40px;margin-top: 5px;margin-left: 5px;}
-
+	.main-btn{
+		font-size: 12px;
+		padding: 3px 10px;
+		border:0;
+		margin:0 3px 10px 3px;
+	}
 	#nav{padding:0;}
 	#nav.nav-transparent{background:#fff}
 	.main-nav{
