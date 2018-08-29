@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <title>首页</title>
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="css/owl.carousel.css" />
+    <link type="text/css" rel="stylesheet" href="css/owl.theme.default.css" />
+    <link type="text/css" rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <script src="js/count.js"></script>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<script>
+    //IE9一下提示升级浏览器
+    (function(window) {
+        var theUA = window.navigator.userAgent.toLowerCase();
+        if ((theUA.match(/msie\s\d+/) && theUA.match(/msie\s\d+/)[0]) || (theUA.match(/trident\s?\d+/) && theUA.match(/trident\s?\d+/)[0])) {
+            var ieVersion = theUA.match(/msie\s\d+/)[0].match(/\d+/)[0] || theUA.match(/trident\s?\d+/)[0];
+            if (ieVersion < 9) {
+                var str = "为了更友好的访问网站，IE浏览器请用IE8以上版本";
+                document.writeln("<pre style='text-align:center;color:#333;background-color:#fff; height:100%;border:0;position:fixed;top:0;left:0;width:100%;z-index:1234'>" +
+                    "<p style='padding-top:200px;margin:0'><strong>" + str + "<br/></strong></p></pre>");
+                document.execCommand("Stop");
+            };
+        }
+    })(window);
+</script>
+<style type="text/css">
+
+
+    .slideshow {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .slideshow-image {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: no-repeat 50% 50%;
+      background-size: cover;
+      -webkit-animation-name: kenburns;
+              animation-name: kenburns;
+      -webkit-animation-timing-function: linear;
+              animation-timing-function: linear;
+      -webkit-animation-iteration-count: infinite;
+              animation-iteration-count: infinite;
+      -webkit-animation-duration: 20s;
+              animation-duration: 20s;
+      opacity: 1;
+      -webkit-transform: scale(1.3);
+              transform: scale(1.3);
+    }
+    .slideshow-image:nth-child(1) {
+      -webkit-animation-name: kenburns-1;
+              animation-name: kenburns-1;
+      z-index: 3;
+    }
+    .slideshow-image:nth-child(2) {
+      -webkit-animation-name: kenburns-2;
+              animation-name: kenburns-2;
+      z-index: 2;
+    }
+    .slideshow-image:nth-child(3) {
+      -webkit-animation-name: kenburns-3;
+              animation-name: kenburns-3;
+      z-index: 1;
+    }
+    .slideshow-image:nth-child(4) {
+      -webkit-animation-name: kenburns-4;
+              animation-name: kenburns-4;
+      z-index: 0;
+    }
+
+    @-webkit-keyframes kenburns-1-bak {
+      0% {
+        opacity: 1;
+        -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+      }
+      1.5625% {
+        opacity: 1;
+      }
+      23.4375% {
+        opacity: 1;
+      }
+      26.5625% {
+        opacity: 0;
+        -webkit-transform: scale(1);
+                transform: scale(1);
+      }
+      100% {
+        opacity: 0;
+        -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+      }
+      98.4375% {
+        opacity: 0;
+        -webkit-transform: scale(1.21176);
+                transform: scale(1.21176);
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    @-webkit-keyframes kenburns-1 {
+        0% {
+            opacity: 1;
+            -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+        }
+
+        50% {
+            opacity: 1;
+            -webkit-transform: scale(1);
+            transform: scale(1);
+        }
+
+        100% {
+            opacity: 1;
+            -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+        }
+        98.4375% {
+            opacity: 1;
+            -webkit-transform: scale(1.21176);
+            transform: scale(1.21176);
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes kenburns-1-bak {
+      0% {
+        opacity: 1;
+        -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+      }
+      1.5625% {
+        opacity: 1;
+      }
+      23.4375% {
+        opacity: 1;
+      }
+      26.5625% {
+        opacity: 0;
+        -webkit-transform: scale(1);
+                transform: scale(1);
+      }
+      100% {
+        opacity: 0;
+        -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+      }
+      98.4375% {
+        opacity: 0;
+        -webkit-transform: scale(1.21176);
+                transform: scale(1.21176);
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    @keyframes kenburns-1 {
+        0% {
+            opacity: 1;
+            -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+        }
+        /*1.5625% {*/
+            /*opacity: 1;*/
+        /*}*/
+        /*23.4375% {*/
+            /*opacity: 1;*/
+        /*}*/
+        50% {
+            opacity: 1;
+            -webkit-transform: scale(1);
+            transform: scale(1);
+        }
+        100% {
+            opacity: 1;
+            -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+        }
+        98.4375% {
+            opacity: 1;
+            -webkit-transform: scale(1.21176);
+            transform: scale(1.21176);
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    @-webkit-keyframes kenburns-2 {
+      23.4375% {
+        opacity: 1;
+        -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+      }
+      26.5625% {
+        opacity: 1;
+      }
+      48.4375% {
+        opacity: 1;
+      }
+      51.5625% {
+        opacity: 0;
+        -webkit-transform: scale(1);
+                transform: scale(1);
+      }
+      100% {
+        opacity: 0;
+        -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+      }
+    }
+    @keyframes kenburns-2 {
+      23.4375% {
+        opacity: 1;
+        -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+      }
+      26.5625% {
+        opacity: 1;
+      }
+      48.4375% {
+        opacity: 1;
+      }
+      51.5625% {
+        opacity: 0;
+        -webkit-transform: scale(1);
+                transform: scale(1);
+      }
+      100% {
+        opacity: 0;
+        -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+      }
+    }
+    @-webkit-keyframes kenburns-3 {
+      48.4375% {
+        opacity: 1;
+        -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+      }
+      51.5625% {
+        opacity: 1;
+      }
+      73.4375% {
+        opacity: 1;
+      }
+      76.5625% {
+        opacity: 0;
+        -webkit-transform: scale(1);
+                transform: scale(1);
+      }
+      100% {
+        opacity: 0;
+        -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+      }
+    }
+    @keyframes kenburns-3 {
+      48.4375% {
+        opacity: 1;
+        -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+      }
+      51.5625% {
+        opacity: 1;
+      }
+      73.4375% {
+        opacity: 1;
+      }
+      76.5625% {
+        opacity: 0;
+        -webkit-transform: scale(1);
+                transform: scale(1);
+      }
+      100% {
+        opacity: 0;
+        -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+      }
+    }
+    @-webkit-keyframes kenburns-4 {
+      73.4375% {
+        opacity: 1;
+        -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+      }
+      76.5625% {
+        opacity: 1;
+      }
+      98.4375% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+        -webkit-transform: scale(1);
+                transform: scale(1);
+      }
+    }
+    @keyframes kenburns-4 {
+      73.4375% {
+        opacity: 1;
+        -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+      }
+      76.5625% {
+        opacity: 1;
+      }
+      98.4375% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+        -webkit-transform: scale(1);
+                transform: scale(1);
+      }
+    }
+
+
+
+
+</style>
+<header id="home">
+    <div class="bg-img" style="background-color:#000;">
+        <div class="overlay"></div>
+        <div class="slideshow">
+          <div class="slideshow-image" style="background-image: url('images/2.jpg')"></div>
+          <!--<div class="slideshow-image" style="background-image: url('images/2.jpg')"></div>-->
+          <!--<div class="slideshow-image" style="background-image: url('images/2.jpg')"></div>-->
+          <!--<div class="slideshow-image" style="background-image: url('images/2.jpg')"></div>-->
+        </div>
+    </div>
+    <nav id="nav" class="navbar nav-transparent">
+        <div class="container">
+            <div class="navbar-header">
+                <div class="navbar-brand">
+                    <a href="index.html">
+                        <img class="logo img-responsive" src="images/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="nav-collapse">
+                    <span></span>
+                </div>
+            </div>
+
+            <ul class="main-nav nav navbar-nav navbar-right">
+                <li><a href="#home">首页</a></li>
+                <li class="">
+                    <a href="#about">关于我们</a>
+                    <!--<ul class="dropdown">-->
+                        <!--<li><a href="">公司简介</a></li>-->
+                        <!--<li><a href="">企业文化</a></li>-->
+                        <!--<li><a href="">组织架构</a></li>-->
+                        <!--<li><a href="">平移换股保障机制</a></li>-->
+                    <!--</ul>-->
+                </li>
+                <li><a href="#business">业务范围</a></li>
+                <li><a href="#pro">产品展示</a></li>
+                <li><a href="#news">新闻</a></li>
+                <li><a href="#show">路演</a></li>
+                <!--<li><a href="#investment">投资者服务中心</a></li>-->
+                <li><a href="#contact">联系我们</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+    <div class="home-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="home-content">
+                        <h1 class="white-text">专注价值投资，共享资本盛宴</h1>
+                        <h2 class="white-text">
+                            厚德载物，自强不息。我们将以品牌为旗帜，塑文化为灵魂，育人才兴企业，让我们携手共进，互利共赢，共创辉煌！
+                        </h2>
+                        <!--<button class="white-btn">立即咨询</button>-->
+                        <!--<button class="main-btn">联系我们</button>-->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</header>
+
+<div id="about" class="section md-padding">
+    <div class="container">
+        <div class="section-header text-center">
+            <h2 class="title">关于我们</h2>
+        </div>
+        <div class="row mt-30">
+            <div class="col-md-6">
+                <div id="about-slider" class="owl-carousel owl-theme">
+                    <a href="#"><img class="img-responsive" src="images/a1.jpg" alt=""></a>
+                    <img class="img-responsive" src="images/a2.jpg" alt="">
+                    <img class="img-responsive" src="images/a1.jpg" alt="">
+                    <img class="img-responsive" src="images/a1.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <p class="about-p">
+                    中润国投经济信息服务有限公司是经国家工商总局核准设立，管理总部在上海。公司专注于价值投资和财富管理，搭建独具特色的投资管理平台、强大的资产管理和财富管理服务平台、资本市场项目运营平台、挂牌上市企业股权（股票）对接平台等四大综合平台。目前在上海、杭州、广州、成都、沈阳、广西等地设立了中润国投分公司.
+                </p>
+                <p class="about-p">
+                    润谷东方（北京）国际投资有限责任公司旗下的中润国投经济信息服务有限公司是经国家工商总局审批注册成立的，专业从事项目投资、资产管理以及财富管理，致力于打造非银行类金融服务航母，未来将以企业本身的雄厚实力、广阔的资源背景以及对资本市场的深度了解为支撑...
+                </p>
+                <button class="main-btn">更多</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="business" class="section md-padding">
+    <div class="bg-img" style="background-image: url('./images/4.jpg');">
+        <div class="overlay"></div>
+    </div>
+    <div class="container">
+        <div class="section-header text-center">
+            <h2 class="title white-text">业务范围</h2>
+        </div>
+        <div class="row">
+            <div class="row mt-30">
+                <div class="col-sm-6 col-md-5 text-center">
+                    <h4 class="white-text font-normal">财富管理和路演中心</h4>
+                    <div class="white-text text-left business-text">
+                        以上海为中心，以点带面，覆盖江浙沪三地，搭建路演平台，组织项目路演，帮助企业实现融资目标，并通过专业化的投资理财知识分享与理财服务，帮助投资人实现资本价值最大化。
+                    </div>
+                    <div class="counter col_fourth">
+                        <div class="timer count-title white-text count-number" data-to="9866" data-speed="8000"></div>
+                    </div>
+                </div>
+                <div class="col-sm-0 col-md-1"></div>
+                <div class="col-sm-0 col-md-1"></div>
+                <div class="col-sm-6 col-md-5 text-center">
+                    <h4 class="white-text font-normal">产品设计和风控中心</h4>
+                    <div class="white-text text-left business-text">
+                        金融产品设计中心，也是创新中心，注重融合，横向将包括众信金融、海科融通等与多层次资本市场进行了融合，挖掘企业的投资亮点，设计出创新的金融产品，为企业策划多维融资体系。同时，对客户的资金使用把控风险。
+                    </div>
+                    <div class="counter col_fourth">
+                        <div class="timer count-title white-text count-number" data-to="8998" data-speed="8000"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="pro" class="section md-padding">
+    <div class="container">
+        <div class="row">
+            <div class="section-header text-center">
+                <h2 class="title">产品展示</h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="news" class="section md-padding bg-grey">
+    <div class="container">
+        <div class="row">
+            <div class="section-header text-center">
+                <h2 class="title">新闻中心</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-6 col-md-4 col-sm-4">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="show" class="section md-padding">
+    <div id="mycanves" style="position: relative;">
+        <div class="container" id="canvesheight">
+            <div class="row">
+                <div class="section-header text-center">
+                    <h2 class="title">路演服务中心</h2>
+                </div>
+            </div>
+            <div class="row mt-30">
+                <div class="col-sm-4 col-md-4 mb-15">
+                    <a href="#">
+                    <div class="luyan">
+                        <div class="ly-img"><img src="images/luyan2.jpg" class="img-responsive"></div>
+                        <div class="ly-name">
+                            <span class="num num5 white-text">沙龙</span>
+                            <div class="ly-text white-text">
+                                投资人可以随时来我公司跟进项目进度、上市进度和业务增长进度，所投项目是否达到预计增长率，上市计划是否如期进行，您都可以在这里找到答案，如果客户觉得项目不错，也可以追加投资，项目的多元化可以让您分散投资，保值增值，拥有财富自由！
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="col-sm-4 col-md-4 mb-15">
+                    <div class="luyan">
+                        <div class="ly-img"><img src="images/luyan3.jpg" class="img-responsive"></div>
+                        <div class="ly-name">
+                            <span class="num num4 white-text">会所</span>
+                            <div class="ly-text white-text">
+                                我们提供优质的会所接待服务，欢迎客户伙伴邀约知己好友前来参观，也可以和我们的工作人员交流投资热点，商讨新形势下投资人的选择。中润国投作为一家有实力、有潜力的公司，愿意每一位有投资实力、投资意向的客户前来参观，无论您是经人介绍前来，还是和我们的客户一块前来，我们 都会用饱满的热情、周到的服务欢迎您的到来！
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4 mb-15">
+                    <div class="luyan">
+                        <div class="ly-img"><img src="images/luyan4.jpg" class="img-responsive"></div>
+                        <div class="ly-name">
+                            <span class="num num6 white-text">报告厅</span>
+                            <div class="ly-text white-text">
+                                报告厅报告厅报告厅报告厅报告厅报告厅报告厅报告厅报告厅报告厅报告厅报告厅报告厅报告厅报告厅报告厅报告厅报告厅报告厅报告厅报告厅报告厅报告厅报告厅报告厅报告厅报告厅报告厅报告厅
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="js/canvas-nest.min.js"></script>
+</div>
+
+<div class="bg-grey">
+    <div class="container">
+        <div class="row mt-30">
+            <div class="section-header text-center">
+                <h2 class="title">路演展示</h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="contact" class="section md-padding">
+    <div class="container">
+        <div class="row">
+            <div class="section-header text-center">
+                <h2 class="title">联系我们</h2>
+            </div>
+            <div class="col-xs-6 col-md-4 col-sm-4">
+                <div class="contact">
+                    <i class="fa fa-phone"></i>
+                    <h3>电话</h3>
+                    <p>021-23570161</p>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-4 col-sm-4">
+                <div class="contact">
+                    <i class="fa fa-envelope"></i>
+                    <h3>邮箱</h3>
+                    <p><a href="" class="__cf_email__">1194681243@qq.com</a></p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4 col-sm-4">
+                <div class="contact">
+                    <i class="fa fa-map-marker"></i>
+                    <h3>地址</h3>
+                    <p>上海市虹口区黄浦路99号<br>上海滩国际大厦26楼（整层）</p>
+                </div>
+            </div>
+            <!--<div class="col-md-8 col-md-offset-2">-->
+                <!--<form class="contact-form">-->
+                    <!--<input type="text" class="input" placeholder="您的称呼">-->
+                    <!--<input type="email" class="input" placeholder="电子邮件">-->
+                    <!--<input type="text" class="input" placeholder="联系电话">-->
+                    <!--<textarea class="input" placeholder="咨询内容"></textarea>-->
+                    <!--<button class="main-btn">提交留言</button>-->
+                <!--</form>-->
+            <!--</div>-->
+        </div>
+    </div>
+</div>
+
+<div id="back-to-top"></div>
+<div id="preloader">
+    <div class="preloader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+
+
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script src="js/count.js"></script>
+
+<script src="js/divhover.js"></script>
+<script>
+    $(".num5").num({Type:'num5'});
+    $(".num4").num({Type:'num4'});
+    $(".num6").num({Type:'num6'});
+</script>
+</body>
+</html>

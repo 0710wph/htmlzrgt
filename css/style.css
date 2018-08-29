@@ -457,6 +457,9 @@ input[type=text]:focus,input[type=email]:focus,input[type=password]:focus,input[
 	.dropdown li:nth-child(1) a{border-top:0}
 	.has-dropdown:hover>.dropdown{opacity:1;visibility:visible;-webkit-transform:translateY(0px) translateX(50%);-ms-transform:translateY(0px) translateX(50%);transform:translateY(0px) translateX(50%)}
 	.has-dropdown:hover>a:before{-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg)}.nav-collapse{display:none}
+	/*.container {*/
+		/*width: 100%;*/
+	/*}*/
 }
 
 @media only screen and (max-width:767px){
